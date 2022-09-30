@@ -2,7 +2,6 @@ import { VStack, Box, Stack } from "@chakra-ui/react";
 import { Text } from "@chakra-ui/react";
 import './sideBar.css'
 const SideBar = () => {
-
     const menuList = [
         {
             "JS Tutorial": [
@@ -22,9 +21,7 @@ const SideBar = () => {
 
     ]
     return (<>
-      <VStack  
-        className="sideBar"      
-       >
+      <VStack  className="sideBar" >
       {
         menuList.map((obj ,i) =>{
             // if(i==1) return ;

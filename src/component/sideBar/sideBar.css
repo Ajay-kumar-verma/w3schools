@@ -1,7 +1,7 @@
 .sideBar{
     position: fixed;
   background-color: rgb(250, 250, 250);
-  max-height: 600px;
+  max-height: 500px;
   width: 200px;
   overflow-y:auto ;
 
