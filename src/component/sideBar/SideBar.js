@@ -1,5 +1,7 @@
 import { VStack, Box, Stack } from "@chakra-ui/react";
+import {Link} from 'react-router-dom'
 import { Text } from "@chakra-ui/react";
+
 import './sideBar.css'
 const SideBar = () => {
     const menuList = [
@@ -31,7 +33,9 @@ const SideBar = () => {
          <Box  > 
          { Object.values(obj)[0].map(ele=>{
              return (<>
-          <Text>{ele}</Text>
+          
+          <Link className="a"  to={ele} ><Text>{ele}</Text></Link    >
+
           </>)  
 
        })
