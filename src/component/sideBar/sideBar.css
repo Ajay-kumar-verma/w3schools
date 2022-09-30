@@ -1,0 +1,8 @@
+.sideBar{
+    position: fixed;
+  background-color: rgb(250, 250, 250);
+  max-height: 600px;
+  width: 200px;
+  overflow-y:auto ;
+
+}
