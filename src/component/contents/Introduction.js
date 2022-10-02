@@ -1,27 +1,24 @@
-import { Stack, HStack, VStack, Box, Flex, Spacer } from '@chakra-ui/react';
-import { ChevronLeftIcon, ChevronRightIcon, ArrowRightIcon } from '@chakra-ui/icons'
-import { Text } from '@chakra-ui/react';
+import { Box,HStack, VStack,Divider ,Spacer} from '@chakra-ui/react'
+import { Text, Highlight } from '@chakra-ui/react'
+
 const Introduction = () => {
-  console.log("This is home page ")
+  return (
+    <>
+     <VStack w="100%" bg="#9de3ac" h="80px" >
+     
+     <HStack>
+     <Text mt="20">This page contains some examples of what JavaScript can do. </Text>
+     <Spacer />
+     <Text  color="#9de3ac">This page contains some examples of what JavaScript cihuliuan do. </Text>
+      </HStack>
+                               </VStack>
+     <HStack>
+     <Text as="b" fontSize="5xl">JavaScript Can Change HTML Content</Text>
+        <Spacer/>
+      <Text as="b" color="white" fontSize="5xl">JavaScript Can Change HTML ContentJavaScript Can Change HTML Content</Text>
 
-  const content=[
-    <Text className='txt' >JavaScript is the world's most popular programming language.</Text>
-    , <Text className='txt' >JavaScript is the programming language of the Web.</Text>
-    ,<Text  className='txt' >JavaScript is easy to learn.</Text> 
-    , <Text className='txt' > This tutorial will teach you JavaScript from basic to advanced.</Text> 
-];
-
-
-  return (<>
-    {
-      content.map(ele => ele)
-    }
-    <HStack bg='#0e8f17' w="400px" borderRadius={10} p='1%' >
-      <Box fontSize='20px' color='white' >  START LEANING JAVASCRIPT NOW </Box>
-      <ArrowRightIcon fontSize={10} color="white" />
-    </HStack>
-
-  </>)
-
+     </HStack>
+    </>
+  )
 }
 export default Introduction;

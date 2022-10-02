@@ -7,7 +7,7 @@ const SideBar = () => {
     const menuList = [
         {
             "JS Tutorial": [
-                "JS HOME", "JS Introduction", "JS Where To ", "JS Output", "JS Statements", "JS Syntax","JS Commnet","JS Variable"
+                "JS HOME", "JS Introduction", "JS Where To ", "JS Output", "JS Statements", "JS Syntax","JS Comment","JS Variable"
                 ,"JS Let","JS Const" ,"JS Arithmetic" ,"JS Assignment","JS Precedence" ,"JS Datatype" ,"JS Function ","JS Objects",
                 "JS Events","JS Strings" ,"JS String Methods"
             ]
@@ -34,7 +34,7 @@ const SideBar = () => {
          { Object.values(obj)[0].map(ele=>{
              return (<>
           
-          <Link className="a"  to={ele} ><Text>{ele}</Text></Link    >
+          <a className="a"   href={ele} ><Text>{ele}</Text></a>
 
           </>)  
 

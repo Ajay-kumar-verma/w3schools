@@ -12,13 +12,14 @@ const Content = () => {
  
     const location=useLocation();
    
-   
-  useEffect(()=>{
-    let title=location.pathname ;
-    if(title==='/' || title==="/JS HOME" ){
+    
+    useEffect(()=>{
+      let title=location.pathname ;
+       
+      if(title==='/' || title==="/JS HOME" ){
         setHeading(`Tutorial`)
         }else{
-         title=title?.substring(1,title?.length)    
+         title=title?.substring(3,title?.length)    
         setHeading(title)
             
         }
@@ -35,12 +36,12 @@ const Content = () => {
     
     return (<>
             
-<HStack ml={200} p={10} >
+<HStack ml={200}  >
             <VStack>
                 <Box height='80px' >
                     <img src="https://picsum.photos/200/300?random=2" height="70px" width="1000" alt="image hai" />
                 </Box>
-                <Box height="70px" w='100%' bg="white" >
+                <Box height="40px" w='100%' bg="white" >
                     <Text fontSize={40} color="black"  > JAVASCRIPT {heading} </Text>
                 </Box>
                 <Flex>
@@ -56,12 +57,11 @@ const Content = () => {
                         <ChevronRightIcon fontSize={30} color="white" />
                     </HStack>
                 </Flex>
-                <Box height='150px' bg="#97e8ac" w="90%" p="5%" >
-                <Main /> 
+                
+               <Main path={heading} />     
                
-                </Box>
-           </VStack>
-            <Box> <img src="https://picsum.photos/200/300?random=3"  width="700px" height="500px"  alt="image hai" /> </Box>
+                </VStack>
+            <Box> <img src="https://picsum.photos/200/300?random=3"  width="100px" height="500px"  alt="image hai" /> </Box>
         </HStack>
     
      
