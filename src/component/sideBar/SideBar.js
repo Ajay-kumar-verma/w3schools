@@ -1,5 +1,5 @@
 import { VStack, Box, Stack } from "@chakra-ui/react";
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { Text } from "@chakra-ui/react";
 
 import './sideBar.css'
@@ -7,9 +7,9 @@ const SideBar = () => {
     const menuList = [
         {
             "JS Tutorial": [
-                "JS HOME", "JS Introduction", "JS Where To ", "JS Output", "JS Statements", "JS Syntax","JS Comment","JS Variable"
-                ,"JS Let","JS Const" ,"JS Arithmetic" ,"JS Assignment","JS Precedence" ,"JS Datatype" ,"JS Function ","JS Objects",
-                "JS Events","JS Strings" ,"JS String Methods"
+                "JS HOME", "JS Introduction", "JS Where To ", "JS Output", "JS Statements", "JS Syntax", "JS Comment", "JS Variable"
+                , "JS Let", "JS Const", "JS Arithmetic", "JS Assignment", "JS Precedence", "JS Datatype", "JS Function ", "JS Objects",
+                "JS Events", "JS Strings", "JS String Methods"
             ]
         }
         ,
@@ -23,30 +23,30 @@ const SideBar = () => {
 
     ]
     return (<>
-      <VStack  className="sideBar" >
-      {
-        menuList.map((obj ,i) =>{
-            // if(i==1) return ;
-          return(<>
-         <Box><Text as="b" >{Object.keys(obj)[0]}</Text></Box>
-         
-         <Box  > 
-         { Object.values(obj)[0].map(ele=>{
-             return (<>
-          
-          <a className="a"   href={ele} ><Text>{ele}</Text></a>
+        <VStack className="sideBar" >
+            {
+                menuList.map((obj, i) => {
 
-          </>)  
+                    return (<>
+                        <Box><Text as="b" >{Object.keys(obj)[0]}</Text></Box>
 
-       })
-          } 
-     </Box>
-          
-         </>)
+                        <Box  >
+                            {Object.values(obj)[0].map(ele => {
+                                return (<>
 
-        })
-      }
-     </VStack>
+                                    <a className="a" href={ele} ><Text>{ele}</Text></a>
+
+                                </>)
+
+                            })
+                            }
+                        </Box>
+
+                    </>)
+
+                })
+            }
+        </VStack>
 
 
 

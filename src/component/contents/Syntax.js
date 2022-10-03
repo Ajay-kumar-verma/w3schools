@@ -1,4 +1,4 @@
-import { VStack,Box, Spacer,Divider } from '@chakra-ui/react'
+import { VStack, Box, Divider } from '@chakra-ui/react'
 import { Text, Highlight } from '@chakra-ui/react'
 
 const Syntax = () => {
@@ -10,7 +10,7 @@ const Syntax = () => {
             JavaScript syntax is the set of rules, how JavaScript programs are
             constructed:
           </Text>
-            <Box w="900px"></Box>{' '}
+          <Box w="900px"></Box>{' '}
         </Box>
         <Divider orientation='horizontal' />
         <Box w="90%" p={10} bg="white" h="150px">
@@ -20,7 +20,6 @@ const Syntax = () => {
               var x;
             </Highlight>
           </Text>
-
           <Text>
             <Highlight query="var" styles={{ px: '1', py: '1', color: 'blue' }}>
               var y;
@@ -29,13 +28,12 @@ const Syntax = () => {
           <Text color="#40a356" mt="20">
             // How to use variables:
           </Text>
-<Text>
-<Highlight query="5" styles={{ px: '1', py: '1', color: 'red' }}  > x = 5 </Highlight>
-</Text>
-<Text>
-<Highlight query="6" styles={{ px: '1', py: '1', color: 'red' }} > x = 6 </Highlight>
-</Text>
-
+          <Text>
+            <Highlight query="5" styles={{ px: '1', py: '1', color: 'red' }}  > x = 5 </Highlight>
+          </Text>
+          <Text>
+            <Highlight query="6" styles={{ px: '1', py: '1', color: 'red' }} > x = 6 </Highlight>
+          </Text>
         </Box>
       </VStack>
     </>
