@@ -37,8 +37,7 @@ const WhereTo = () => {
      <Box> <Text><Highlight query='&lt;script&gt; '  styles={{color:"#d15a4f"}} > &lt;script&gt;</Highlight></Text> </Box>
      <Box> <Text><Highlight query='"demo"' styles={{color:"#d15a4f"}} > document.getElementById &#40;"demo"&#41;.innerHTML = "My First JavaScript";</Highlight></Text> </Box>
      <Box> <Text><Highlight query='&lt;script&gt;' styles={{color:"#d15a4f"}} > &lt;script&gt;</Highlight></Text> </Box>
-  
-    </Box>
+     </Box>
     </HStack>
 
     </VStack>

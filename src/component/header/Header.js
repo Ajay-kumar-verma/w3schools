@@ -40,9 +40,8 @@ const Header = () => {
                 <HStack h='80px'    bg='#dbe2fa'>
              
                {headingList.map((ele ,i)=>{
-                      // if(i==0) return (<>{ele}</>);
-                      if(true) return (<>
-                      <Text fontSize='25px' >{ele}</Text>
+                     if(true) return (<>
+                      <Box className='topList' ><Text fontSize='25px' >{ele}</Text> </Box>
                       {(i>3 || i==0)?null:<TriangleDownIcon /> }
                        {i>3?<Spacer />:null}
                        
