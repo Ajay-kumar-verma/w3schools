@@ -6,12 +6,12 @@ const Comment = () => {
     <>
       <VStack w="100%" h="300px" p="20">
         <Box mb={10} mt={10}>
-          <Box><Text fontSize={18} color="black">
+          <Box m={10} ><Text fontSize={18} color="black">
           JavaScript comments can be used to explain JavaScript code, and to make it more readable.
           </Text>
           </Box>
       
-          <Box>
+          <Box m={10} >
          <Text fontSize={18} color="black">
           JavaScript comments can also be used to prevent execution, when testing alternative code.
           </Text>

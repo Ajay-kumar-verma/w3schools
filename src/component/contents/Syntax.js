@@ -4,7 +4,7 @@ import { Text, Highlight } from '@chakra-ui/react'
 const Syntax = () => {
   return (
     <>
-      <VStack bg="#95c7a0" w="100%" h="300px">
+      <VStack bg="#bae3c1" w="100%" h="300px">
         <Box mb={10} mt={10}>
           <Text fontSize={20} color="black">
             JavaScript syntax is the set of rules, how JavaScript programs are

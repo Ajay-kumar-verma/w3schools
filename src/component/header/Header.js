@@ -6,7 +6,7 @@ import './Header.css';
 const Header = () => {
    const headingList=[
      <img src="https://picsum.photos/200/300?random=1"  height="70px" width="70px"  alt="image hai" />
-     , "Tutorials", "References","Exercises","Videos",
+     , "Tutorials", "References","Exercises","Videos",<Box w="200px" > </Box>,
      <Box className='headBox' style={{background:"#22242A",color:"white"}} >Pro</Box> ,
      <Box className='headBox' style={{background:'rgb(248, 201, 238)'}}>Get  Certified</Box>,
      <Box className='headBox' style={{background: "#EED97D"}} >Free Website</Box> ,
@@ -16,12 +16,14 @@ const Header = () => {
 
     const topicList = [
         <CalendarIcon color="white" m={10} h={20} w={20} />
-        , "HTML", "CSS", "JAVASCRIPT", "SQL", 'PYTHON', "JAVA", "PHP", "BOOTSTRAP", "HOWTO", "W3.CSS", "C", "C++"
+        , "HTML", "CSS", "JAVASCRIPT", "SQL", 'PYTHON', "JAVA", "PHP", "BOOTSTRAP", "HOWTO",
+         "W3.CSS", "C", "C++"
        
     ]
 
 
     const iconList = [
+        <Box w="50px"  ></Box>,
         <MoonIcon color="white" m={10} h={20} w={20} />
         , <SunIcon color="white" m={10} h={20} w={20} />
         , <Search2Icon color="white" m={10} h={20} w={20} />
@@ -52,28 +54,33 @@ const Header = () => {
                 </HStack>
 
 
-                <Box h='70px' bg='rgb(32, 19, 44)'>
+                <Box h='70px' bg='#232924'>
 
                   {
                     <HStack mt={5}>
                     {topicList.map(element=>{
                        return (<>
-                       <Box className='menu' > <Text as='b' fontSize='3xl' >{element}</Text> </Box>
+                       <Box className='menu' w="100%" h="40px" 
+                         bg={element==='JAVASCRIPT'?"green":null}
+                        
+                       > <Text as='b' fontSize='3xl' >{element}</Text> </Box>
                         <Text ></Text>
                       </>);
  
                     }) 
                     }
-              <Spacer /> 
-          
-              {iconList.map(element=>{
-                       return (<>
+
+                
+                 {iconList.map(element=>{
+                     return (<>
                         <Text as='b' fontSize='3xl' color="white" >{element}</Text>
                         <Text ></Text>
                       </>);
  
                     }) 
                     }
+
+               
 
           
                   </HStack>

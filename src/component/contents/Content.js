@@ -45,20 +45,20 @@ const Content = () => {
                     <Text fontSize={40} color="black"  > JAVASCRIPT {heading} </Text>
                 </Box>
                 <Flex>
-                    <HStack bg='#0e8f17' borderRadius={10} p={1}  >
+                    <HStack bg='#0e8f17' borderRadius={10} p={5}  >
                         <ChevronLeftIcon fontSize={30} color="white" />
                         <Box fontSize='30px' color='white' >  Home </Box>
                     </HStack>
                     
                     <Spacer />
                     <Box w="800px" ></Box>
-                    <HStack bg='#0e8f17' borderRadius={10} p={1} >
+                    <HStack bg='#0e8f17' borderRadius={10} p={5} >
                         <Box fontSize='30px' color='white' >  Next </Box>
                         <ChevronRightIcon fontSize={30} color="white" />
                     </HStack>
                 </Flex>
                 
-               <Main path={heading} />     
+               <Main  />     
                
                 </VStack>
             <Box> <img src="https://picsum.photos/200/300?random=3"  width="100px" height="500px"  alt="image hai" /> </Box>

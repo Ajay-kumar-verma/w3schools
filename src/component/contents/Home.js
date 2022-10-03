@@ -15,14 +15,25 @@ const Home = () => {
   return (
     <>
     
-    <VStack bg='#0e8f17' w='100%' h="300px" >
-   {
+    <VStack bg='#bed1bf' w='100%' h="250px" >
+     <HStack mt="30" >
+ <Box>  {
       content.map(ele => ele)
     }
-    <HStack bg='#0e8f17' w="400px" borderRadius={10} p='1%' >
-      <Box fontSize='20px' color='white' >  START LEANING JAVASCRIPT NOW </Box>
+ </Box>
+  <Box  w="560px" ></Box>
+ </HStack>
+    <HStack    p='1%' >
+     <Box >
+      <HStack bg='#0e8f17' borderRadius={10} p={10}  ><Box fontSize='20px' color='white' >  START LEANING JAVASCRIPT NOW </Box>
       <ArrowRightIcon fontSize={10} color="white" />
-    </HStack>
+      </HStack>
+      </Box>
+       <Box w="560px" ></Box>
+   
+   </HStack>
+   
+
     </VStack>
 
 

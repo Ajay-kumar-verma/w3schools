@@ -27,9 +27,8 @@ const Statements = () => {
 <Highlight query='// Statement 1' styles={{ px: '1', py: '1', color: 'green' }}>
 let x, y, z;    // Statement 1
 </Highlight>
-
-
 </Text>
+
 <Text>
 <Highlight query='5' styles={{ px: '1', py: '1', color: 'red' }}>
 x = 5;
