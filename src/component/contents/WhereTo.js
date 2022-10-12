@@ -64,6 +64,7 @@ const WhereTo = () => {
         </HStack>
         <VStack w="100%" h="150px" bg="white"  >
           <Box m="5px"><Text as="b" fontSize="40px">JavaScript Functions and Events   </Text></Box>
+        
           <Box>
             <Text color="black"  styles={{color:"red"}}  >
               <Highlight query="function"  styles={{color:'red'}}  >
@@ -71,9 +72,11 @@ const WhereTo = () => {
               </Highlight>
             </Text>
           </Box>
+
+          
           <Box>
-            <Text color="black" >
-              <Highlight query="event" styles={{ color: "black", fontWeight: "bold" }} >
+            <Text color="black"   >
+              <Highlight query="event"  className="clr" >
                 For example, a function can be called when an event occurs, like when the user clicks a button.
               </Highlight>
             </Text>
